@@ -63,4 +63,4 @@ b, a = a, b #swaping :변수를 맞바꾼다
 print('a=' , a , 'b=', b)
 
 del b
-print(b) # NameError: name 'b' is not defined
+#print(b) # NameError: name 'b' is not defined

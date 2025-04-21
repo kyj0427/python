@@ -8,7 +8,7 @@
 """
 
 # 파이션의 모든 자료형은 객체로 취급한다
-# 실행 : alt + shift + F10
+# 실행 :  shift + F10
 
 """ [ 기초 연산자 ]
         + : 더하기
@@ -22,7 +22,7 @@
     2. 관계연산자
         <   >   <=  >=  ==  !=
     
-    3. 논리연산자
+    3. 논리연산자 =>글자로 표시 
         not     or      and
         
     4. 이진(비트) 연산자
@@ -48,15 +48,39 @@
     [참고] is / not is 사용하지 못하게 에러 발생함     
 """
 
-a = 5
-b = 2
+#  a = 5
+#  b = 2
+#
+# add = a+b
+# # print('a+b' + add) => python 에서는 문자열 + 숫자열이 불가능
+# print('a+b' , add) #
+# print('a+b' + str(add))
+
+# *********** 제발 변수명으로 str 이라고 쓰지말자
+# str = '헬로우'
+# print('a+b' + str(add)) # 'str' object is not callable
+
+
 
 """ [ 출력결과 ] 
-        a + b = 7
-        a - b = 3
-        a * b = 10
         a / b = 2.5
         a // b = 2
         a % b = 1
         a ** b = 25
 """
+a = 5
+b = 2
+
+print('H' in 'Hello')   #T
+print('h' in 'Hello')   #F
+print('h' not in 'Hello') #T
+
+print(a is b) #F
+#print(a is 5)
+
+a = '20'
+b = '4'
+
+a = '3'
+b = float(a)
+print(b ** int(a))
