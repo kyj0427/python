@@ -33,11 +33,28 @@ i7=set()
 i8=dict()
 i9={}
 i10=None
+# (포인트는) 값이 없거나 0인경우 모두 거짓
 
+a = -1
+if a:
+    print('True')
+else:
+    print('False')
 
+a=0
+if a:
+    print('True')
+else:
+    print('False')
 
+# 논리연산자와 이용 -------------------------
+a = 10
+b = -1
 
+if a and b:
+    print('True2')
+if a or b:
+    print('True3')
 
-
-
-
+print(a and b) #-1 //둘다 참이기떄문에 뒤에값 반영
+print(a or b)  #10 //뒤에값이 중요하지않다, 앞에 값에서 결정된다.
