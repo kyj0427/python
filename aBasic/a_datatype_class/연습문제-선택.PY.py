@@ -21,3 +21,14 @@ print(average)
 
 list_data_a = [1, 2]
 list_data_b = [3, 4]
+
+
+
+
+
+alist = ["a", "1", "c"]
+blist = ["b", "2", "d"]
+
+for a, b in enumerate(zip(alist, blist)):
+    print(a,':',b)
+
