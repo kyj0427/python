@@ -1,0 +1,43 @@
+
+
+1. selenium
+    - 주로 웹앱을 테스트하는데 이용하는 프레임워크
+    - 웹 브라우저를 원격으로 조작할 때 사용
+    - 자동으로 URL을 열고 클릭, 스크롤, 문자 입력등의 동작을 조작할 수 있다.
+    - webdriver라는 API를 통해 운영체제에 설치된 Chrome등의 브라우저를 제어하게 된다.
+
+    [설치]  메뉴 > File > Settings > Project Interpreter > + 버튼
+     selenium 검색 후 인스톨
+        > pip install selenium
+
+     ******************** [2024. 05]     selenium 3.14 버전이 설치됨 그래서 업그레이드 필요
+
+     pip install --upgrade pip
+        ERROR: To modify pip, please run the following command:
+        C:\Users\ict\anaconda3\python.exe -m pip install --upgrade pip
+        **************** [2024.12] 위의 명령대로 실행
+
+     pip install --upgrade selenium
+
+     pip install webdriver_manager
+
+
+    [참고] Selenium의 버전은 자주 업데이트 되고, 브라우저의 업데이트 마다 새로운 Driver를 잡아주기 때문에
+        항상 최신버전을 깔아 주는 것이 좋다.
+
+    [매뉴얼]
+    ` https://selenium-python.readthedocs.io/index.html
+    ` https://docs.seleniumhq.org/docs/
+
+
+2. 크롬 웹드라이버 ( Chrome WebDriver )
+
+    *************************** 다운로드 필요없음
+    그러나 selenium3에선 크롬드라이버를 직접 확장해야 했지만,
+    selenium4에서는 크롬드라이버 자동 업데이트 해줌
+
+    [다운로드] http://chromedriver.chromium.org/downloads
+        chromedirver_win32.zip 파일 다운로드 받고 압축풀기
+        설치된 크롬 버전과 맞는 버전을 다운로드 해야 한다.
+
+    pip install webdriver_manager

@@ -65,7 +65,7 @@ with open(filename,'r',encoding='utf-8')as f:
     print(words)
     num = len(words) #list 에서 개수를 알고싶을때 사용 =>len
 
-print('파이일명',filename,'/ 총 단어수:', num)
+print('파일명',filename,'/ 총 단어수:', num)
 
 
 

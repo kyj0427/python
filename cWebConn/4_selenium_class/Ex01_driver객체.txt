@@ -1,0 +1,65 @@
+* Selenium은 driver객체를 통해 여러가지 메소드를 제공한다.
+  - HTML을 브라우저에서 파싱해주기 때문에 굳이 Python와 BeautifulSoup을 사용하지 않아도 된다.
+
+
+[ URL에 접근하는 api ]
+
+get(‘http://url.com’)
+
+********************************
+[ SELEMINUM 3]
+driver.find_element_by_class_name("")
+driver.find_element_by_id("")
+driver.find_element_by_css_selector("")
+driver.find_element_by_name("")
+driver.find_element_by_tag_name("")
+driver.find_element_by_xpath("")
+driver.find_element_by_link_text("")
+driver.find_element_by_partial_link_text("")
+(복수형 driver.find_elements_by~~)
+
+[ selenium 4 ]
+
+1. DOM 내부에 있는 여러 요소 중 첫 번째 요소(element) 찾는다.
+
+find_element(By.ID,     ‘HTML_id’)
+
+find_element(By.NAME,   ‘HTML_name’)
+find_elements(By.NAME,   ‘HTML_name’)
+
+find_element(By.CLASS_NAME, ‘some_class_name’)
+find_elements(By.CLASS_NAME, ‘some_class_name’)
+
+find_elements(By.CSS_SELECTOR, ‘#css > div.selector’)
+
+find_elements(By.XPATH, ‘/html/body/some/xpath’) : xpath 지정하여 해당 요소 추출
+
+
+
+3. DOM 요소에 적용할 수 있는 메소드와 속성
+clear()             : 글자를 지움
+click()             : 클릭
+get_attribute(name) : 요소의 속성 name에 해당하는 값을 추출
+is_displayed()      : 요소가 화면에 출력되는지 확인
+is_enabled()
+is_selected()
+save_screenshot(filename)
+submit()
+execute_script()
+
+외에도 많은 속성과 메소드가 있습니다.
+또한 각 브라우저 드라이버 객체의 속성도 있습니다.
+
+[예시]
+    def scroll_infinite():
+    scroll_to_bottom = "window.scrollTo(0, document.body.scrollHeight);"
+    get_window_height = "return document.body.scrollHeight"
+    last_height = driver.execute_script(get_window_height)
+    while True:
+    	driver.execute_script(scroll_to_bottom)
+        time.sleep(3)
+        new_height = driver.execute_script(get_window_height)
+        if new_height == last_height:
+        	break
+        last_height = new_height
+
