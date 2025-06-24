@@ -16,7 +16,7 @@ options.add_experimental_option("detach", True)
 # 불필요한 에러 메세지 제거 코드
 # options.add_experimental_option("excludeSwitched",["enable-logging"]);
 service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(options=options) #접근이나 인식하기위해서 필요한것
 
 driver.implicitly_wait(3)
 """
@@ -28,10 +28,10 @@ driver.implicitly_wait(3) :
 
 
 # 2. 페이지 접근
-
+driver.get('http://www.naver.com')
 
 # 3. 화면을 캡처해서 저장하기
-
+driver.save_screenshot("MyPage.png")
 
 
 # 하고 나서 다시 닫는거 보여줌

@@ -37,3 +37,25 @@ soup = BeautifulSoup(site1,"html.parser")
       구청전화번호 : TEL. 02-3396-4114
       구청홈페이지 : http://www.junggu.seoul.kr
 '''
+
+#1
+
+for i in range(1,26): #1~25 까지 숫자 반복문
+    tmp1 = soup.select("#district%d > strong" % i ) # %가 format보다 속도가 빠르다
+    #print(tmp1[0].text)
+    tmp2 = soup.select('#district%d > ul > li:nth-child(1)' % i)
+    tmp3 = soup.select('#district%d > ul > li:nth-child(2)' % i)
+    tmp4 = soup.select('#district%d > ul > li:nth-child(3)' % i)
+    print( "구청이름 :",tmp1[0].text.strip(),'\n'
+          ,"구청주소 :",tmp2[0].text.strip(),'\n'
+          ,"구청전화번호 :",tmp3[0].text.strip(),'\n'
+          ,"구청홈페이지 :",tmp4[0].text.strip())
+
+    구청이름.append(tmp1[0].text) #태그와 태그사이에 들어있는
+    구청주소.append(tmp2[0].text)
+    구청전화번호.append(tmp3[0].text)
+    구청홈페이지.append(tmp4[0].text)
+
+
+
+

@@ -17,19 +17,25 @@ import Ex07_alldown2
 
 # ------------------------------------------------------
 # (3) 이미 처리한 파일인지 확인하기 위한 변수
+#dictionary
 proc_files = {}
 
 # HTML을 분석하고 다운받는 함수
 def analyze_html(url, root_url):
     # (1)
     print("analyze_html=", url)
+
+    #alldwon2 경로의 파일을 다운 받음
     savepath = Ex07_alldown2.download_file(url)
+
+    #savepath(alldown2) 의 다운값이 none 이라면 리턴
     if savepath is None: return
+
     if savepath in proc_files: return # 이미 처리된 파일이면 실행하지 않음
-    proc_files[savepath] = True
+    proc_files[savepath] = True  #{ '/xxx/xxx/index.html':True }
     # print(proc_files)
 
-
+#index.html 를 다시열어서 추출
     # (2) 링크 추출
     f = open(savepath, "r", encoding="utf-8")
     html = f.read()
@@ -42,6 +48,7 @@ def analyze_html(url, root_url):
         # HTML이라면
         if re.search(".html$", link_url):
             # 재귀적으로 HTML 파일 분석하기
+            # 재귀함수를 사용할때는 반드시 나가는 뭔가가 필요하다
             analyze_html(link_url, root_url)
             continue
 

@@ -8,6 +8,7 @@
     아이디 : id
     비밀번호 : pw
 """
+from re import search
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -17,8 +18,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 # 0. 네이버 로그인 정보
-myID = ''
-myPW = ''
+myID = 'yongjae0427'
+myPW = 'Vksek012!'
 
 # 1. webdriver 객체생성
 options = Options()
@@ -32,6 +33,12 @@ driver.implicitly_wait(2) #  자원로드될 때까지 3초 기다림
 
 # 네이버로그인 하기 -[결론] 네이버 보안에 걸림
 driver.get('https://nid.naver.com/nidlogin.login')
+#아이디 id , 비번 pw
+# driver.find_element(By.NAME,'id').send_keys(myID)
+# driver.find_element(By.NAME, 'pw').send_keys(myPW)
+#
+# driver.find_element(By.ID,'log.login').click()
 
-
-
+driver.execute_script("document.getElementsByName('id')[0].value=\'"+myID+"\'")
+driver.execute_script("document.getElementsByName('pw')[0].value=\'"+myPW+"\'")
+driver.find_element(By.ID, "log.login").click()

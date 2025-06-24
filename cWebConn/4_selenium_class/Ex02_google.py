@@ -6,6 +6,9 @@
     <input name='q' value='파이썬'~~ >
     그리고 'google검색' 버튼이 type='submit' 인거 확인
 '''
+from idlelib.searchengine import search_reverse
+from re import search
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -23,10 +26,18 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(options=options)
 driver.implicitly_wait(2)
 
+# 사이트 접속
+driver.get('https://www.daum.net/')
+driver.implicitly_wait(8)
 
+# 원하는 동작 제어하기
+# search_txt = driver.find_element(By.NAME, "q")
+# search_txt.send_keys('로봇 그만좀..')
+# #search_txt.submit()
+# search_btn = driver.find_element(By.NAME, "btnK")
+# search_btn.click()
 
-
-
-
-
+search_txt = driver.find_element(By.NAME, "q")
+search_txt.send_keys('너 뭐야?')
+search_txt.submit()
 # driver.close()  # 이 코드 없으면 크롬창이 안 닫힘

@@ -21,3 +21,11 @@ html = """
     </body></html>
 """
 
+soup = BeautifulSoup(html, 'html.parser')
+
+h1 = soup.select_one('#course > h1')
+print(h1.text)
+
+h2 = soup.select('#subjects > ul > li')
+for h2 in h2:
+    print(h2.text)

@@ -18,3 +18,14 @@ html = """
     네이브 : http://www.naver.com
     다아음 : http://www.daum.net
 '''
+soup = BeautifulSoup(html, 'html.parser')
+
+links = soup.find_all('a')
+
+
+#print(links)
+
+for link in links:
+    name = link.text
+    href = link.attrs['href']
+    print(name, ':', href)

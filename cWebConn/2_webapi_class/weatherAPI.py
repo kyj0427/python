@@ -9,32 +9,68 @@
 # API 키를 지정합니다. 자신의 키로 변경해서 사용해주세요.
 apikey = "bHmfI5LKTM-5nyOSyozPwQ"
 
-# 날씨를 확인할 도시 지정하기
-cities = ["Seoul,KR", "Tokyo,JP", "New York,US"]
+#위치 설정
+nx = "57"
+ny = "127"
+
+
 
 # url 지정
-api = "http://api.openweathermap.org/data/2.5/weather?q={city}&appid={key}"
+api = "https://apihub.kma.go.kr/api/typ02/openApi/VilageFcstInfoService_2.0/getUltraSrtNcst"
 
-# 켈빈 온도를 섭씨 온도로 변환하는 함수
-k2c = lambda k: k - 273.15
 
 import requests
 import json
+import datetime
 
-for city in cities:
-    url = api.format(city=city, key=apikey)
-    # print(url)
-    res = requests.get(url)
-    print(res.text)
-    #print(type(res.text))
-    data = json.loads(res.text)
-    print(data)
-    #print(type(data))
+# 현재 날짜 및 시간 계산
 
-    print('도시:', data['name'])
-    print('최저온도:', k2c(data['main']['temp_min']) )
-    print('최고온도:', k2c(data['main']['temp_max']) )
+now = datetime.datetime.now()
 
-    print('습도:', data['main']['humidity'])
-    print('기압:', data['main']['pressure'])
-    print('날씨표현:', data['weather'][0]['description'] )
+base_date = now.strftime("%Y%m%d")
+
+base_time = "0600"
+
+# 현재 날짜 및 시간 계산
+
+now = datetime.datetime.now()
+
+base_date = now.strftime("%Y%m%d")
+
+base_time = "0600"
+
+
+
+params = {
+
+    'serviceKey': apikey,
+
+    'pageNo': '1',
+
+    'numOfRows': '1000',
+
+    'dataType': 'JSON',
+
+    'base_date': base_date,
+
+    'base_time': base_time,
+
+    'nx': '59',
+
+    'ny': '126'
+
+}
+
+response = requests.get(api, params=params)
+
+# print(response.text)  # 응답 내용 출력
+
+data = response.json()
+
+print(json.dumps(data, indent=4, ensure_ascii=False))
+
+
+for item in data["response"]["body"]["items"]["item"]:
+
+    if item["category"] == "T1H": # 기온 데이터
+     print(f"예보 시간: {item['baseTime']}, 기온: {item['obsrValue']}°C")

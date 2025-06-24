@@ -13,4 +13,10 @@ from urllib import request as req
 
 # 웹 문서 가져오기
 url = 'https://finance.naver.com/marketindex/'
+res = req.urlopen(url)
 
+# 응답내용으로 파싱하기
+soup = BeautifulSoup(res, 'html.parser')
+
+usd =soup.select('ul#exchangeList .usd .value')
+print(usd[0].text ,'원')

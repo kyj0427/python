@@ -9,8 +9,7 @@
         - find_all()
     
     [참고] 파서의 종류 
-        - lxml : c로 만들어져 속도 빠름
-        - html5lib : 파이썬으로 만들어서 lxml보다 느림
+
         - html.parser (*): 파이썬 버전을 확인해서 사용
 """
 
@@ -21,12 +20,26 @@ html = """
         <h1>스크레이핑 연습</h1>
         <p>웹페이지 분석하자</p>
         <p>데이타 정제하기</p>
-    </body></html>
+    </body></html>  
 """
 
 # 1. 데이타 파서하기
-
+soup = BeautifulSoup(html, 'html.parser')
 # 2. 원하는 요소 접근하기
-
+h1 = soup.html.body.h1
+print(h1)
 # 3. 요소의 내용 추출하기
+print(h1.text)
+print(h1.string)
 
+print('-'*100)
+
+p1 = soup.find('p')
+print(p1)
+
+p2 = soup.find_all('p')
+print(p2)
+#[<p>웹페이지 분석하자</p>, <p>데이타 정제하기</p>] << list라고함
+
+for temp in p2:
+    print(temp.text)
