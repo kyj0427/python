@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="951ce51d-fee2-4014-99eb-e583702311ee" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/../cWebConn/.idea/cWebConn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/.idea/cWebConn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/1_webdata_class/Ex02_urllib.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/1_webdata_class/Ex02_urllib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/2_webapi_class/weatherAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/2_webapi_class/weatherAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex01_element.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex01_element.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex02_attribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex02_attribute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex02_seletor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex02_seletor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex03_naver연습.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex03_naver연습.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex04_교보문고연습.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex04_교보문고연습.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex06_seoul.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex06_seoul.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex07_alldown1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex07_alldown1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex07_alldown2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex07_alldown2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex07_alldown3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/Ex07_alldown3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/4_selenium_class/Ex01_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/4_selenium_class/Ex01_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/4_selenium_class/Ex02_google.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/4_selenium_class/Ex02_google.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cWebConn/4_selenium_class/Ex03_naverlogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/4_selenium_class/Ex03_naverlogin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/또래오래_매장지도.html" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/또래오래_매장지도.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,24 +16,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2yt2CPrlwIBO14aA7jtvZ0a5Qdd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python\eAnalysis\평가_class" />
       <recent name="D:\python\eAnalysis" />
     </key>
   </component>
