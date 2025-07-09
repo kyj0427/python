@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="951ce51d-fee2-4014-99eb-e583702311ee" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/또래오래_매장지도.html" beforeDir="false" afterPath="$PROJECT_DIR$/../cWebConn/3_beautifulsoup_class/또래오래_매장지도.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/평가_class/월별 소통정보 (자치구별-첨두시별).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex00_참고1_용어.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex00_참고1_용어.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex01_텐서플로우.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex01_텐서플로우.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex02_모델기본.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex02_모델기본.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex03_회귀_보스톤집값.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex03_회귀_보스톤집값.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex04_분류1_와인구별.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex04_분류1_와인구별.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex04_분류2_와인구별.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex04_분류2_와인구별.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex06_rnn_1Simple.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex06_rnn_1Simple.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex06_rnn_감정분석.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../fML/03_tensorflow2_class/Ex06_rnn_감정분석.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fML/04_recommend/2_아이템 기반 인접 이웃 협업 필터링 실습.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../fML/04_recommend/2_아이템 기반 인접 이웃 협업 필터링 실습.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
